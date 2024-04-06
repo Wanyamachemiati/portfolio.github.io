@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" media="screen and (max-width:800px)" href="table.css">
+    <link rel="stylesheet" media="screen and (max-width:530px)" href="phone.css">
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#portfolio">portfolio</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#Education Background">Education Background</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+        <nav class="navbar"></nav>
+    </nav>
+    <section id="Home">
+        <div class="main">
+            <h1 class="headings">I AM <br> WANYAMA WILLIES</h1>
+            <button class="btn">
+                Hire Me
+
+            </button>
+        </div>
+
+    </section>
+    <section id="about">
+            <h1 class="headings">ABOUT ME</h1>
+            <div id="pic">
+            <img src="img3.jpg" alt="">
+            <div id="intro">
+               <h2>WANYAMA WILLIES</h2> 
+               <p>I am a web developer, system analyst, a proffessional code debbuger, content writter and also an enterprenuer</p>
+            </div>
+
+        </div>
+
+    </section>
+    <section id="Education Background">
+    <h2>Education Background</h2>
+
+    <table>
+        <tr>
+            <th>University Name</th>
+            <th>Qualification</th>
+            <th>Field of Study</th>
+            <th>Graduation year</th>
+        </tr>
+        <tr>
+            <td>Kibabii University</td>
+            <td> Degree</td>
+            <td>Information Technology</td>
+            <td>2012</td>
+        </tr>
+        <tr>
+            <td>Oxford University</td>
+            <td>masters</td>
+            <td>Web development</td>
+            <td>2015</td>
+        </tr>
+        <tr>
+            <td>Harvard University</td>
+            <td>Doctor Of Philosophy</td>
+            <td>digital marketing</td>
+            <td>2020</td>
+        </tr>
+        <!-- Add more rows for additional education background details -->
+    </table>
+</section>
+
+    <section id="portfolio">
+        <h1 class="headings">PORTFOLIO</h1>
+        <div class="gallery">
+           <img src="img1.jpg" alt="">
+           <img src="img2.jpg" alt="">
+           <img src="img4.jpg" alt="">
+           <img src="img5.jpg" alt="">
+           <img src="img2.jpg" alt="">
+           <img src="img1.jpg" alt="">
+        </div>
+    </section>
+    <section id="services">
+        <h1 class="headings">SERVICES</h1>
+        <div class="row">
+            <div class="box">
+                <img src="web.png" alt="">
+                <h1 class="headings">website Design</h1>
+                <p>ceating visually appealing and user friendly layout for website, enhancing the overall experience of visitors by focusing on usability and accessibility, ensuring the website functions well</p>
+
+            </div>
+            <div class="box">
+                <img src="ux.png" alt="">
+                <h1 class="headings">UX/UI designer</h1>
+                <p>conducting research to understand user needs, behaviours and prefferences, creating personas and mapping out user journeys to guide designs</p>
+            </div>
+            <div class="box">
+                <img src="enter.jpg" alt="">
+                <h1 class="headings">digital enterprenuer</h1>
+                <p>digital marketing, e-commerce solutions, website development, mobile app development, consulting and coaching, digital product creation, affiliate marketing, branding and design services.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1 class="headings">CONTACT</h1>
+        <form action="" class="form">
+            <input type="text" name="name" class="input" placeholder="Enter Your Name">
+            <input type="email" name="email" class="input" placeholder="Enter Your Email">
+            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
+
+            <input type="submit" value="SEND" id="send">
+        </form>
+    </section>
+    <footer>
+        <p>Visit <a href="https://williesharros24@gmail.com">williesharros24@gmail.com</a></p>
+        <p>Phone: +254707803393</p>
+        <p>Location: Bungoma, Kenya</p>
+
+        <p id="linkContainer">The link to your website will appear here.</p>
+
+    <script>
+        // JavaScript code to create a link for your website
+        var websiteUrl = "https://www.my-website.com"; // Replace this with your actual website URL
+        
+        var linkElement = document.createElement("a");
+        linkElement.setAttribute("href", websiteUrl);
+        linkElement.textContent = "Visit My Website";
+
+        var container = document.getElementById("linkContainer");
+        container.innerHTML = ""; // Clear any existing content
+        container.appendChild(linkElement);
+    </script>
+        <p>&copy; 2024 WANYAMA WILLIES.</p>
+    </footer>
+</body>
+</html>
